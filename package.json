@@ -21,6 +21,7 @@
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
+    "@angular/fire": "^7.5.0",
     "@angular/forms": "^14.2.0",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
@@ -51,6 +52,8 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~10.9.0",
-    "typescript": "~4.8.0"
+    "typescript": "~4.8.0",
+    "firebase-admin": "^9.11.1",
+    "firebase-functions": "^3.6.0"
   }
 }

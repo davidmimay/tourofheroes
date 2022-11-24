@@ -168,6 +168,22 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "ssr": "cloud-functions",
+            "prerender": true,
+            "firebaseProject": "mimay1",
+            "firebaseHostingSite": "mimay1",
+            "functionName": "ssr_angular.io-example",
+            "functionsNodeVersion": "16",
+            "region": "us-central1",
+            "browserTarget": "angular.io-example:build:production",
+            "serverTarget": "angular.io-example:server:production",
+            "prerenderTarget": "angular.io-example:prerender:production",
+            "outputPath": "dist/angular.io-example/functions"
+          }
         }
       }
     }
