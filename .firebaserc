@@ -2,7 +2,7 @@
   "targets": {
     "mimay1": {
       "hosting": {
-        "angular.io-example": [
+        "angularbase": [
           "mimay1"
         ]
       }

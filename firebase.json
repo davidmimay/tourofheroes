@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "angular.io-example",
+      "target": "angularbase",
       "public": "dist/browser",
       "ignore": [
         "**/.*"
@@ -29,12 +29,12 @@
       "rewrites": [
         {
           "source": "**",
-          "function": "ssr_angular.io-example"
+          "function": "ssr_angularbase"
         }
       ]
     }
   ],
   "functions": {
-    "source": "dist/angular.io-example/functions"
+    "source": "dist/angularbase/functions"
   }
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular.io-example": {
+    "angularbase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production"
+              "browserTarget": "angularbase:build:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development"
+              "browserTarget": "angularbase:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular.io-example:build"
+            "browserTarget": "angularbase:build"
           }
         },
         "test": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular.io-example:serve"
+            "devServerTarget": "angularbase:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular.io-example:serve:production"
+              "devServerTarget": "angularbase:serve:production"
             }
           }
         },
@@ -140,12 +140,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular.io-example:build:development",
-              "serverTarget": "angular.io-example:server:development"
+              "browserTarget": "angularbase:build:development",
+              "serverTarget": "angularbase:server:development"
             },
             "production": {
-              "browserTarget": "angular.io-example:build:production",
-              "serverTarget": "angular.io-example:server:production"
+              "browserTarget": "angularbase:build:production",
+              "serverTarget": "angularbase:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -159,12 +159,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production",
-              "serverTarget": "angular.io-example:server:production"
+              "browserTarget": "angularbase:build:production",
+              "serverTarget": "angularbase:server:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development",
-              "serverTarget": "angular.io-example:server:development"
+              "browserTarget": "angularbase:build:development",
+              "serverTarget": "angularbase:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -176,13 +176,13 @@
             "prerender": true,
             "firebaseProject": "mimay1",
             "firebaseHostingSite": "mimay1",
-            "functionName": "ssr_angular.io-example",
+            "functionName": "ssr_angularbase",
             "functionsNodeVersion": "16",
             "region": "us-central1",
-            "browserTarget": "angular.io-example:build:production",
-            "serverTarget": "angular.io-example:server:production",
-            "prerenderTarget": "angular.io-example:prerender:production",
-            "outputPath": "dist/angular.io-example/functions"
+            "browserTarget": "angularbase:build:production",
+            "serverTarget": "angularbase:server:production",
+            "prerenderTarget": "angularbase:prerender:production",
+            "outputPath": "dist/angularbase/functions"
           }
         }
       }
